@@ -108,13 +108,13 @@ int main(void)
   MX_ADC1_Init();
   MX_USART1_UART_Init();
   MX_SPI1_Init();
-  MX_USART3_UART_Init();
+  MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
   printf("ADS1118 Thermocouple Test Start...\r\n");
   ADS1118_Init(); // ��ʼ�� ADS1118 Ƭѡ����
   TempFilter_Init(); // 初始化 ADS1118 和统计变量
   uint8_t test_str[] = "USART3 is Working!\r\n";
-  HAL_UART_Transmit(&huart3, test_str, 20, 100);
+  HAL_UART_Transmit(&huart2, test_str, 20, 100);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -124,9 +124,11 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  // ��ȡ������������¶�
+
 	TempFilter_Process(); // 持续运行测温和打印任务
-	Sensor_Tx_Process(&huart3);
+	Sensor_Tx_Process(&huart2);
+
+
   }
   /* USER CODE END 3 */
 }
