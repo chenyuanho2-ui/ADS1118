@@ -1,6 +1,6 @@
 Dependencies for Project 'ADS1118', Target 'ADS1118': (DO NOT MODIFY !)
-F (startup_stm32f103xb.s)(0x69D4DA3B)(--cpu Cortex-M3 --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_ADS1118-ID:\keil5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-ID:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include--pd "__UVISION_VERSION SETA 524" --pd "_RTE_ SETA 1" --pd "STM32F10X_MD SETA 1"--list startup_stm32f103xb.lst --xref -o ads1118\startup_stm32f103xb.o --depend ads1118\startup_stm32f103xb.d)
-F (../Core/Src/main.c)(0x69D4DA49)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../miku666-I.\RTE\_ADS1118-ID:\keil5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-ID:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ads1118\main.o --depend ads1118\main.d)
+F (startup_stm32f103xb.s)(0x69D5C9D9)(--cpu Cortex-M3 --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_ADS1118-ID:\keil5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-ID:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include--pd "__UVISION_VERSION SETA 524" --pd "_RTE_ SETA 1" --pd "STM32F10X_MD SETA 1"--list startup_stm32f103xb.lst --xref -o ads1118\startup_stm32f103xb.o --depend ads1118\startup_stm32f103xb.d)
+F (../Core/Src/main.c)(0x69D5C9D8)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../miku666-I.\RTE\_ADS1118-ID:\keil5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-ID:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ads1118\main.o --depend ads1118\main.d)
 I (../Core/Inc/main.h)(0x69D4D72B)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x66D43B74)
 I (../Core/Inc/stm32f1xx_hal_conf.h)(0x69D4B207)
@@ -32,14 +32,14 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x66D43B74)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x66D43B74)
 I (../Core/Inc/adc.h)(0x69D4B1AD)
 I (../Core/Inc/spi.h)(0x69D4B1AD)
-I (../Core/Inc/usart.h)(0x69D4DA39)
+I (../Core/Inc/usart.h)(0x69D5C9D7)
 I (../Core/Inc/gpio.h)(0x69D4B1AC)
 I (D:\keil5\ARM\ARMCC\include\stdio.h)(0x588B8344)
-I (../miku666/ads1118.h)(0x69D4C1B7)
+I (../miku666/ads1118.h)(0x69D5D131)
 I (../miku666/thermocouple.h)(0x69D4B399)
 I (../miku666/temp_filter.h)(0x69D4C7AC)
 I (../miku666/sensor_tx.h)(0x69D4C829)
-F (../Core/Src/gpio.c)(0x69D4DA38)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../miku666-I.\RTE\_ADS1118-ID:\keil5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-ID:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ads1118\gpio.o --depend ads1118\gpio.d)
+F (../Core/Src/gpio.c)(0x69D5C9D6)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../miku666-I.\RTE\_ADS1118-ID:\keil5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-ID:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ads1118\gpio.o --depend ads1118\gpio.d)
 I (../Core/Inc/gpio.h)(0x69D4B1AC)
 I (../Core/Inc/main.h)(0x69D4D72B)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x66D43B74)
@@ -132,8 +132,8 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x66D43B74)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x66D43B74)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x66D43B74)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x66D43B74)
-F (../Core/Src/usart.c)(0x69D4DA39)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../miku666-I.\RTE\_ADS1118-ID:\keil5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-ID:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ads1118\usart.o --depend ads1118\usart.d)
-I (../Core/Inc/usart.h)(0x69D4DA39)
+F (../Core/Src/usart.c)(0x69D5C9D7)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../miku666-I.\RTE\_ADS1118-ID:\keil5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-ID:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ads1118\usart.o --depend ads1118\usart.d)
+I (../Core/Inc/usart.h)(0x69D5C9D7)
 I (../Core/Inc/main.h)(0x69D4D72B)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x66D43B74)
 I (../Core/Inc/stm32f1xx_hal_conf.h)(0x69D4B207)
@@ -688,9 +688,9 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x66D43B74)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x66D43B74)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x66D43B74)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x66D43B74)
-F (..\miku666\ads1118.h)(0x69D4C1B7)()
-F (..\miku666\ads1118.c)(0x69D4C241)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../miku666-I.\RTE\_ADS1118-ID:\keil5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-ID:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ads1118\ads1118.o --depend ads1118\ads1118.d)
-I (..\miku666\ads1118.h)(0x69D4C1B7)
+F (..\miku666\ads1118.h)(0x69D5D131)()
+F (..\miku666\ads1118.c)(0x69D5D249)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../miku666-I.\RTE\_ADS1118-ID:\keil5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-ID:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ads1118\ads1118.o --depend ads1118\ads1118.d)
+I (..\miku666\ads1118.h)(0x69D5D131)
 I (../Core/Inc/main.h)(0x69D4D72B)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x66D43B74)
 I (../Core/Inc/stm32f1xx_hal_conf.h)(0x69D4B207)
@@ -753,10 +753,10 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x66D43B74)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x66D43B74)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x66D43B74)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x66D43B74)
-I (..\miku666\ads1118.h)(0x69D4C1B7)
+I (..\miku666\ads1118.h)(0x69D5D131)
 F (..\miku666\thermocouple.h)(0x69D4B399)()
 F (..\miku666\temp_filter.h)(0x69D4C7AC)()
-F (..\miku666\temp_filter.c)(0x69D4CA88)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../miku666-I.\RTE\_ADS1118-ID:\keil5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-ID:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ads1118\temp_filter.o --depend ads1118\temp_filter.d)
+F (..\miku666\temp_filter.c)(0x69D5D131)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../miku666-I.\RTE\_ADS1118-ID:\keil5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-ID:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ads1118\temp_filter.o --depend ads1118\temp_filter.d)
 I (..\miku666\temp_filter.h)(0x69D4C7AC)
 I (../Core/Inc/main.h)(0x69D4D72B)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x66D43B74)
@@ -787,7 +787,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x66D43B74)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x66D43B74)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x66D43B74)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x66D43B74)
-I (..\miku666\ads1118.h)(0x69D4C1B7)
+I (..\miku666\ads1118.h)(0x69D5D131)
 I (..\miku666\thermocouple.h)(0x69D4B399)
 I (D:\keil5\ARM\ARMCC\include\stdio.h)(0x588B8344)
 F (..\miku666\sensor_tx.h)(0x69D4C829)()
