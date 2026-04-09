@@ -38,4 +38,7 @@ uint16_t ADS1118_WriteRead(uint16_t config_cmd);
 float ADS1118_GetInternalTemp(void);
 float ADS1118_GetVoltage_mV(void);
 
+// 新增：温度校准函数
+float ADS1118_CalibrateTemp(float measured_temp);
+
 #endif /* __ADS1118_H */
