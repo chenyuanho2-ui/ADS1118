@@ -1,5 +1,6 @@
 #include "sensor_tx.h"
 #include "temp_filter.h" // 引用滤波模块，以获取最新温度
+#include <string.h> // 需要包含这个头文件
 
 // 内部 CRC16 计算函数 (保持不变)
 static uint16_t Calculate_CRC16(uint8_t *data, uint16_t length) {
@@ -18,24 +19,28 @@ void Sensor_Tx_Process(UART_HandleTypeDef *huart) {
     static uint32_t last_tx_tick = 0;
     SensorData_t packet;
 
-    // 自定义从机向主机发送的频率 (例如 100ms 发送一帧)
     if (HAL_GetTick() - last_tx_tick >= 100) {
         last_tx_tick = HAL_GetTick();
 
         // 1. 填充基础信息
         packet.header = 0x55;
-        packet.timestamp = HAL_GetTick();
         
-        // 2. 直接引用 temp_filter 计算出的最新平均温度
-        packet.temperature = TempFilter_GetLatestAvgTemp();
+        // 安全填充时间戳
+        uint32_t ts = HAL_GetTick();
+        memcpy(&packet.timestamp, &ts, sizeof(uint32_t));
+        
+        // 安全填充温度
+        float temp = TempFilter_GetLatestAvgTemp();
+        memcpy(&packet.temperature, &temp, sizeof(float));
 
-        // 3. 计算CRC (计算帧头、时间戳、温度，共9字节)
-        packet.crc16 = Calculate_CRC16((uint8_t *)&packet, sizeof(SensorData_t) - 3);
+        // 3. 计算CRC
+        uint16_t crc = Calculate_CRC16((uint8_t *)&packet, sizeof(SensorData_t) - 3);
+        memcpy(&packet.crc16, &crc, sizeof(uint16_t));
 
         // 4. 填充帧尾
         packet.tail = 0xAA;
 
-        // 5. 通过指定的串口 (USART3) 以纯二进制形式发送整个结构体
-        HAL_UART_Transmit(huart, (uint8_t *)&packet, sizeof(SensorData_t), HAL_MAX_DELAY);
+        // 5. 换成合理的超时时间 50ms
+        HAL_UART_Transmit(huart, (uint8_t *)&packet, sizeof(SensorData_t), 50);
     }
 }
